@@ -29,7 +29,7 @@ public class WebServer
                     var str = request.Url.ToString().Split('/')[3];
                     var returnStr = "Failed";
 
-                    //Request has to be http://<ip>--puzzle--<puzzle_id>
+                    //Request has to be http://<ip>/--puzzle--<puzzle_id>
                     if (!string.IsNullOrEmpty(str) && str.StartsWith("--puzzle--"))
                     {
                         try
